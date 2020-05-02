@@ -1,16 +1,47 @@
-<form class="example-form">
-     <mat-form-field class="example-half-width">
-         <mat-label>Your Name</mat-label>
-        <input matInput placeholder="Enter Your Name" value="">
-    </mat-form-field>
-           
-    <mat-form-field class="example-half-width">
-         <mat-label>Phone Number</mat-label>
-         <input matInput placeholder="Enter Phone Number" value="">
-    </mat-form-field>
-
-    <mat-form-field class="example-full-width">
+<form class="example-form"    >
+     <table class="example-full-width" cellspacing="0"> 
+          <tr>
+               <td>
+                    <mat-form-field class="example-full-width">
+                         <mat-label>Your Name</mat-label>
+                         <input [formControl]="inputControl" required matInput placeholder="Enter Your Name" value="">
+                         <mat-error *ngIf="inputControl.hasError('required')">Please Enter Your Name</mat-error>
+                    </mat-form-field>
+               </td>
+               <td>
+                    <mat-form-field class="example-full-width">
+                         <mat-label>Phone Number</mat-label>
+                         <input [formControl]="inputControl" required matInput placeholder="Enter Phone Number" value="">
+                         <mat-error *ngIf="inputControl.hasError('required')">Please Enter Your Phone Number</mat-error>
+                    </mat-form-field>
+               </td>
+          </tr>
+     </table>
+      
+     <mat-form-field class="example-full-width">
         <mat-label>Your Email</mat-label>
-        <input matInput placeholder="Enter Email" value="">
-   </mat-form-field>
+        <input [formControl]="inputControl" required matInput placeholder="Enter Email" value="">
+        <mat-error *ngIf="inputControl.hasError('required')">Please Enter Your Email</mat-error>
+     </mat-form-field>
+
+     <mat-form-field class="example-full-width">
+          <mat-label>Select Your Subject</mat-label>
+          <mat-select name="repeatSelect"  ng-init="repeatSelect = subjects[0].viewvalue" [formControl]="inputControl" required>
+               <mat-option>--</mat-option>
+               <mat-option *ngFor="let subject of subjects" [value]="subject.value">
+                 {{subject.viewValue}}
+               </mat-option>
+          </mat-select>
+          <mat-error *ngIf="inputControl.hasError('required')">Please choose subject</mat-error>
+     </mat-form-field> 
+
+     <mat-form-field class="example-full-width">
+          <mat-label>Leave a Message</mat-label>
+          <textarea matInput placeholder="Your Message" ></textarea>
+     </mat-form-field>
+     <div class="example-button-row">
+          <button mat-raised-button type="submit">Send Message</button>
+          <button mat-raised-button type="reset">Reset Form</button>
+     </div>
+     
 </form>
