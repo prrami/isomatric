@@ -1,2 +1,24 @@
-<app-side-nav></app-side-nav>
-<router-outlet></router-outlet>
+<mat-drawer-container class="example-container" autosize>
+    <mat-drawer #drawer class="example-sidenav" mode="side">
+      <mat-list role="SideNavList">
+        <mat-list-item role="HOME">
+            <mat-icon aria-hidden="false" aria-label="Example home icon">home</mat-icon><a routerLink="/home">HOME</a>
+        </mat-list-item>
+        <mat-list-item role="PRODUCTS">
+            <a routerLink="/Products">PRODUCTS</a>
+        </mat-list-item>
+        <mat-list-item role="DOWNLOAD">
+            DOWNLOAD
+        </mat-list-item>
+      </mat-list>
+    </mat-drawer>
+    <mat-toolbar class="example-toolbar">
+        <button mat-icon-button (click)="drawer.toggle()"><mat-icon>menu</mat-icon></button>
+        <h1 class="example-app-name">Isomatric</h1>
+        <button type="button" mat-button (click)="drawer.toggle()">
+            <img>
+        </button>
+    </mat-toolbar>
+   <router-outlet></router-outlet>
+   <app-footer></app-footer>
+</mat-drawer-container>

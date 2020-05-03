@@ -9,18 +9,25 @@ import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 import {MatInputModule} from '@angular/material/input';
 import {MatSelectModule} from '@angular/material/select';
 import {MatButtonModule} from '@angular/material/button';
-import { SideNavComponent } from './side-nav/side-nav.component';
 import {MatSidenavModule} from '@angular/material/sidenav';
 import {MatMenuModule} from '@angular/material/menu';
 import {MatToolbarModule} from '@angular/material/toolbar';
 import {MatIconModule} from '@angular/material/icon';
 import {MatListModule} from '@angular/material/list';
-
+import { ProductsComponent } from './products/products.component';
+import {MatCardModule} from '@angular/material/card';
+import { FooterComponent } from './footer/footer.component';
+import { HomeComponent } from './home/home.component';
+import { CarouselComponent } from './carousel/carousel.component';
+import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
 @NgModule({
   declarations: [
     AppComponent,
     ContactFormComponent,
-    SideNavComponent,
+    ProductsComponent,
+    FooterComponent,
+    HomeComponent,
+    CarouselComponent,
   ],
   imports: [
     BrowserModule,
@@ -37,6 +44,8 @@ import {MatListModule} from '@angular/material/list';
     MatToolbarModule,
     MatIconModule,
     MatListModule,
+    MatCardModule,
+    NgbModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
