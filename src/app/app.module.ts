@@ -16,7 +16,6 @@ import {MatIconModule} from '@angular/material/icon';
 import {MatListModule} from '@angular/material/list';
 import { ProductsComponent } from './products/products.component';
 import {MatCardModule} from '@angular/material/card';
-import { FooterComponent } from './footer/footer.component';
 import { HomeComponent } from './home/home.component';
 import { CarouselComponent } from './carousel/carousel.component';
 import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
@@ -25,7 +24,6 @@ import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
     AppComponent,
     ContactFormComponent,
     ProductsComponent,
-    FooterComponent,
     HomeComponent,
     CarouselComponent,
   ],

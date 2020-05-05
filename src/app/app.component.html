@@ -2,23 +2,24 @@
     <mat-drawer #drawer class="example-sidenav" mode="side">
       <mat-list role="SideNavList">
         <mat-list-item role="HOME">
-            <mat-icon aria-hidden="false">home</mat-icon><a routerLink="/home">&nbsp;&nbsp;HOME</a>
+            <mat-icon class="material-icon" aria-hidden="false">home</mat-icon><a routerLink="/home">&nbsp;&nbsp;HOME</a>
         </mat-list-item>
+        <mat-divider></mat-divider>
         <mat-list-item role="PRODUCTS">
-            <mat-icon aria-hidden="false">category</mat-icon><a routerLink="/Products">&nbsp;&nbsp;PRODUCTS</a>
+            <mat-icon class="material-icon" aria-hidden="false">category</mat-icon><a routerLink="/Products">&nbsp;&nbsp;PRODUCTS</a>
         </mat-list-item>
+        <mat-divider></mat-divider>
         <mat-list-item role="DOWNLOAD">
-            <mat-icon aria-hidden="false">cloud_download</mat-icon><a routerLink="/Download">&nbsp;&nbsp;DOWNLOAD</a>
+            <mat-icon class="material-icon" aria-hidden="false">cloud_download</mat-icon><a routerLink="/Download">&nbsp;&nbsp;DOWNLOAD</a>
         </mat-list-item>
       </mat-list>
     </mat-drawer>
-    <mat-toolbar _ngcontent-oav-c51 class="example-toolbar">
+    <mat-toolbar class="example-toolbar">
         <button mat-icon-button (click)="drawer.toggle()"><mat-icon>menu</mat-icon></button>
-        <h1 class="example-app-name">Isomatric</h1>
+        <span><img class="isomatriclogosmall" src="assets/isomatriclogo.png"></span>
         <button type="button" mat-button (click)="drawer.toggle()">
             <img>
         </button>
     </mat-toolbar>
    <router-outlet></router-outlet>
-   <app-footer></app-footer>
 </mat-drawer-container>
