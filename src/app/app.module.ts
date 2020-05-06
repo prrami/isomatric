@@ -17,15 +17,15 @@ import {MatListModule} from '@angular/material/list';
 import { ProductsComponent } from './products/products.component';
 import {MatCardModule} from '@angular/material/card';
 import { HomeComponent } from './home/home.component';
-import { CarouselComponent } from './carousel/carousel.component';
 import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
+import {MatGridListModule} from '@angular/material/grid-list';
+import {MatBadgeModule} from '@angular/material/badge';
 @NgModule({
   declarations: [
     AppComponent,
     ContactFormComponent,
     ProductsComponent,
     HomeComponent,
-    CarouselComponent,
   ],
   imports: [
     BrowserModule,
@@ -44,6 +44,8 @@ import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
     MatListModule,
     MatCardModule,
     NgbModule,
+    MatGridListModule,
+    MatBadgeModule
   ],
   providers: [],
   bootstrap: [AppComponent]
