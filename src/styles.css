@@ -2,7 +2,7 @@
 html, body { height: 100%; }
 body {margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 .align-center{
-    text-align: center;
+    text-align: center !important;
 }
 .material-icon{
     color: #555555;
@@ -32,6 +32,7 @@ a:active,a:focus{
     color: #555555;
 }
 .discription20{
+    text-align: justify;
     font-size: 20px;
     color: #555555;
     font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif ;
@@ -40,4 +41,14 @@ a:active,a:focus{
 .fitTodiv{
     width: 100%;
     height: 100%;
+    padding: 25px;
+}
+.mat-tab-label{
+    font-size: 18px;;
+}
+.mat-ink-bar{
+    background-color: #ff2929 !important;
+}
+.mat-tab-label-active{
+    color: #ff2929;
 }

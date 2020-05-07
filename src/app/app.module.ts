@@ -20,12 +20,20 @@ import { HomeComponent } from './home/home.component';
 import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
 import {MatGridListModule} from '@angular/material/grid-list';
 import {MatBadgeModule} from '@angular/material/badge';
+import {MatTreeModule} from '@angular/material/tree';
+import { MetalFalseCeilingsComponent } from './metal-false-ceilings/metal-false-ceilings.component';
+import { MetalExteriorLouversComponent } from './metal-exterior-louvers/metal-exterior-louvers.component';
+import { WoodenTextureComponent } from './wooden-texture/wooden-texture.component';
+import {MatTabsModule} from '@angular/material/tabs';
 @NgModule({
   declarations: [
     AppComponent,
     ContactFormComponent,
     ProductsComponent,
     HomeComponent,
+    MetalFalseCeilingsComponent,
+    MetalExteriorLouversComponent,
+    WoodenTextureComponent,
   ],
   imports: [
     BrowserModule,
@@ -45,7 +53,9 @@ import {MatBadgeModule} from '@angular/material/badge';
     MatCardModule,
     NgbModule,
     MatGridListModule,
-    MatBadgeModule
+    MatBadgeModule,
+    MatTreeModule,
+    MatTabsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

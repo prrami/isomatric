@@ -1,0 +1,30 @@
+.example-card {
+    max-width: 300px;
+  }
+  .example-container {
+    width: 100%;
+    height: 100%;
+ }
+  .example-button-row {
+    display: table-cell;
+  }
+  
+  .example-button-row button {
+    display: table-cell;
+    margin-right: 8px;
+    background-color: #ff2929;
+    color: white;
+  }
+  
+  .example-flex-container {
+    display: flex;
+    justify-content: space-between;
+    width: 480px;
+  }
+  
+  .example-button-container {
+    display: flex;
+    justify-content: center;
+    width: 120px;
+  }
+  
