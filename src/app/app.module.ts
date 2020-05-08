@@ -25,6 +25,7 @@ import { MetalFalseCeilingsComponent } from './metal-false-ceilings/metal-false-
 import { MetalExteriorLouversComponent } from './metal-exterior-louvers/metal-exterior-louvers.component';
 import { WoodenTextureComponent } from './wooden-texture/wooden-texture.component';
 import {MatTabsModule} from '@angular/material/tabs';
+import { ProjectPhotosComponent } from './project-photos/project-photos.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -34,6 +35,7 @@ import {MatTabsModule} from '@angular/material/tabs';
     MetalFalseCeilingsComponent,
     MetalExteriorLouversComponent,
     WoodenTextureComponent,
+    ProjectPhotosComponent,
   ],
   imports: [
     BrowserModule,

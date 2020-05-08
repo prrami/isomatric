@@ -2,24 +2,28 @@
     <mat-drawer #drawer class="example-sidenav" mode="side">
       <mat-list role="SideNavList">
         <mat-list-item role="HOME">
-           <mat-icon class="material-icon" aria-hidden="false">home</mat-icon> <a routerLink="/home">HOME</a>
+           <mat-icon class="material-icon" aria-hidden="false">home</mat-icon> <a (click)="drawer.toggle()" routerLink="/home">HOME</a>
         </mat-list-item>
         <mat-divider></mat-divider>
         <mat-list-item role="PRODUCTS">
-            <mat-icon class="material-icon" aria-hidden="false">category</mat-icon><a routerLink="/Products">PRODUCTS</a>
+            <mat-icon class="material-icon" aria-hidden="false">category</mat-icon><a (click)="drawer.toggle()" routerLink="/Products">PRODUCTS</a>
         </mat-list-item>
         <mat-list-item role="PRODUCTS">
-          <a routerLink="/MetalExteriorLouvers">Metal Exterior Louvers</a>
+          <a (click)="drawer.toggle()" routerLink="/MetalExteriorLouvers">Metal Exterior Louvers</a>
         </mat-list-item>  
         <mat-list-item role="MetalFalseCeilings">
-         <a routerLink="/MetalFalseCeilings">Metal False Ceilings</a>
+         <a (click)="drawer.toggle()" routerLink="/MetalFalseCeilings">Metal False Ceilings</a>
         </mat-list-item>
         <mat-list-item role="WoodenTexture">
-          <a routerLink="/WoodenTexture">Wooden Texture</a>
+          <a (click)="drawer.toggle()" routerLink="/WoodenTexture">Wooden Texture</a>
+         </mat-list-item>
+        <mat-divider></mat-divider>
+        <mat-list-item role="ProjectPhotos">
+          <mat-icon class="material-icon" aria-hidden="false">collections</mat-icon><a (click)="drawer.toggle()" routerLink="/ProjectPhotos">Project Photos</a>
          </mat-list-item>
         <mat-divider></mat-divider>
         <mat-list-item role="DOWNLOAD">
-            <mat-icon class="material-icon" aria-hidden="false">cloud_download</mat-icon><a routerLink="/Download">DOWNLOAD</a>
+          <mat-icon class="material-icon" aria-hidden="false">cloud_download</mat-icon><a (click)="drawer.toggle()" routerLink="/Download">DOWNLOAD</a>
         </mat-list-item>
       </mat-list>
     </mat-drawer>

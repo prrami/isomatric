@@ -1,21 +1,20 @@
-    <span style="margin: 30px;float: left;" *ngFor="let product of products">
-        <mat-card class="example-card">
-          <mat-card-header>
-            <mat-card-title>{{product.title}}</mat-card-title>
-          </mat-card-header>
-          <img mat-card-image src="{{product.thumbnailURL}}" alt="Photo of a Shiba Inu">
-          <mat-card-content>
-            <p style="color:#767676;text-align:justify;font-family: Roboto , sans-serif;line-height: 1.5 ;font-style: normal;letter-spacing: 1.0px;font-size: 16px;">
-              {{product.detail}}
-            </p>
-          </mat-card-content>
-          <mat-card-actions>
-              <div class="example-button-row">
-                  <button mat-raised-button type="submit">More...</button>
-             </div>
-          </mat-card-actions>
-      </mat-card>
-  </span>
+<mat-card class="example-card" *ngFor="let product of products">
+    <mat-card-header>
+      <mat-card-title>{{product.title}}</mat-card-title>
+    </mat-card-header>
+    <img mat-card-image src="{{product.thumbnailURL}}" alt="Photo of a Shiba Inu">
+    <mat-card-content>
+      <p style="color:#767676;text-align:justify;font-family: Roboto , sans-serif;line-height: 1.5 ;font-style: normal;letter-spacing: 1.0px;font-size: 16px;">
+        {{product.detail}}
+      </p>
+    </mat-card-content>
+    <mat-card-actions>
+        <div class="example-button-row">
+            <button mat-raised-button type="submit">More...</button>
+        </div>
+    </mat-card-actions>
+</mat-card>
+
 
   
 
