@@ -3,7 +3,7 @@
     "rules": "database.rules.json"
   },
   "hosting": {
-    "public": "dist/isomatric",
+    "public": "dist\\isomatric",
     "ignore": [
       "firebase.json",
       "**/.*",
