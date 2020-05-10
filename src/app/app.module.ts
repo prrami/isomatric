@@ -26,6 +26,7 @@ import { MetalExteriorLouversComponent } from './metal-exterior-louvers/metal-ex
 import { WoodenTextureComponent } from './wooden-texture/wooden-texture.component';
 import {MatTabsModule} from '@angular/material/tabs';
 import { ProjectPhotosComponent } from './project-photos/project-photos.component';
+import { HttpClientModule } from '@angular/common/http';
 @NgModule({
   declarations: [
     AppComponent,
@@ -57,7 +58,8 @@ import { ProjectPhotosComponent } from './project-photos/project-photos.componen
     MatGridListModule,
     MatBadgeModule,
     MatTreeModule,
-    MatTabsModule
+    MatTabsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
