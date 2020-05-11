@@ -9,15 +9,14 @@ import { HttpClient } from "@angular/common/http";
 export class MetalExteriorLouversComponent implements OnInit {
   products: any = [];
   SubProducts: any = [];
+  
   constructor(private httpClient: HttpClient) { }
 
   ngOnInit() {
     this.httpClient.get("assets/Products.json").subscribe(data =>{
       console.log(data);
       this.products = data;
-      console.log(this.products);
-      this.SubProducts = this.products[0].SubProducts;
-      console.log(this.SubProducts);
+      this.SubProducts = this.products.filter(x=>x.title === "Metal Exterior Louvers")[0].SubProducts;
     })
   }
 }

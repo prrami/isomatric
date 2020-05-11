@@ -16,8 +16,7 @@ export class MetalFalseCeilingsComponent implements OnInit {
     this.httpClient.get("assets/Products.json").subscribe(data =>{
       console.log(data);
       this.products = data;
-      console.log(this.products);
-      this.SubProducts = this.products[1].SubProducts;
+      this.SubProducts = this.products.filter(x=>x.title === "Metal False Ceilings")[0].SubProducts;
       console.log(this.SubProducts);
     })
   }

@@ -1,5 +1,11 @@
 /* You can add global styles to this file, and also import other style files */
 @media only screen and (max-width: 1920px) {
+    .product-card {
+        max-width: 300px;
+        margin: 30px;
+        float: left;
+        border-radius: 2%;
+      }
     .isomatriclogosmall{
         width: 30%;
         height: 30%;
@@ -16,6 +22,12 @@
     }
 }
 @media only screen and (max-width: 600px) {
+    .product-card {
+        max-width: none;
+        margin-left: 20px;
+        margin-right: 20px;
+        border-radius: 2%;
+      }
     .isomatriclogosmall{
         width: 40%;
         height: 40%;
@@ -54,8 +66,9 @@ a:active,a:focus{
     color: #ff2929 !important;
     text-decoration: none !important;
 }
-.title{
+.productTitle{
     padding: 15px;
+    padding-left: 30px;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     color: #555555;
 }
@@ -70,3 +83,4 @@ a:active,a:focus{
 .mat-tab-label-active{
     color: #ff2929;
 }
+
