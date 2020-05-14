@@ -27,6 +27,7 @@ import { WoodenTextureComponent } from './wooden-texture/wooden-texture.componen
 import {MatTabsModule} from '@angular/material/tabs';
 import { ProjectPhotosComponent } from './project-photos/project-photos.component';
 import { HttpClientModule } from '@angular/common/http';
+import { ProductDetailComponent } from './product-detail/product-detail.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -37,6 +38,7 @@ import { HttpClientModule } from '@angular/common/http';
     MetalExteriorLouversComponent,
     WoodenTextureComponent,
     ProjectPhotosComponent,
+    ProductDetailComponent,
   ],
   imports: [
     BrowserModule,

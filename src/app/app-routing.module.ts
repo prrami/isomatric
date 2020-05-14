@@ -6,17 +6,19 @@ import { MetalFalseCeilingsComponent } from './metal-false-ceilings/metal-false-
 import { MetalExteriorLouversComponent } from './metal-exterior-louvers/metal-exterior-louvers.component';
 import { WoodenTextureComponent } from './wooden-texture/wooden-texture.component';
 import { ProjectPhotosComponent } from './project-photos/project-photos.component';
+import { ProductDetailComponent } from './product-detail/product-detail.component';
 const routes: Routes = [
   {path: 'Products', component: ProductsComponent},
   {path: 'home', component: HomeComponent},
-  {path: 'MetalFalseCeilings', component: MetalFalseCeilingsComponent},
-  {path: 'MetalExteriorLouvers', component: MetalExteriorLouversComponent},
-  {path: 'WoodenTexture', component: WoodenTextureComponent},
+  {path: 'Metal False Ceilings', component: MetalFalseCeilingsComponent},
+  {path: 'Metal Exterior Louvers', component: MetalExteriorLouversComponent},
+  {path: 'Wooden Texture', component: WoodenTextureComponent},
   {path: 'ProjectPhotos', component: ProjectPhotosComponent},
+  {path: 'ProductDetail/:title', component: ProductDetailComponent},
 ];
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes, {useHash:true})],
+  imports: [RouterModule.forRoot(routes, {useHash: true})],
   exports: [RouterModule]
 })
 export class AppRoutingModule { }

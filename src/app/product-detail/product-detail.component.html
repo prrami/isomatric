@@ -1,0 +1,39 @@
+<div class="fitTodiv">
+    <h1 class="productTitle">{{product.title}}</h1>
+    <mat-divider></mat-divider>
+    <br>
+    <section>
+        <div class="col-md-12">
+            <div class="col-md-7">
+                <img class="fitTodiv" style="box-shadow: 1px 1px 3px gray;" src="{{product.cover}}">
+            </div>
+            <div class="col-md-5">
+                <mat-card> 
+                    <mat-tab-group>
+                        <mat-tab label="Features">
+                            <p style="padding-top: 25px;" class="discription20">{{product.features}}</p>
+                        </mat-tab>
+                        <mat-tab label="Technical Details">
+                            <p style="padding-top: 25px;" class="discription20">
+                                <span *ngIf="product.technicalDetails.Panels"><b>Panels: </b>{{product.technicalDetails.Panels}}<br><br></span>
+                                <span *ngIf="product.technicalDetails.Material"><b>Material: </b>{{product.technicalDetails.Material}}<br><br></span>
+                                <span *ngIf="product.technicalDetails.Carrier"><b>Carrier: </b>{{product.technicalDetails.Carrier}}<br><br></span>
+                                <span *ngIf="product.technicalDetails.PaintFinish"><b>Paint Finish: </b>{{product.technicalDetails.Panels}}<br><br></span>
+                                <span *ngIf="product.technicalDetails.FlushCap"><b>Flush Cap / Recess Cap: </b>{{product.technicalDetails.FlushCap}}<br><br></span>
+                            </p>
+                        </mat-tab>
+                    </mat-tab-group>
+                </mat-card>
+            </div>
+        </div>
+    </section>
+</div>
+
+
+
+
+
+
+
+
+
