@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
 import { HttpClient } from "@angular/common/http";
-
 @Component({
   selector: 'app-metal-false-ceilings',
   templateUrl: './metal-false-ceilings.component.html',

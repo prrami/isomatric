@@ -22,7 +22,7 @@
     ]
   },
   {
-    "title": "84R / 38R Louvers",
+    "title": "84R - 38R Louvers",
     "cover": "assets/placeholder.jpg",
     "features": "Linear 84R / 38R Cladding is known for its attractive and fluid lines. Panels can be easily removed and replaced by hand allowing easy and full access to services. Their effect is simple but pleasant. Linear Exterior Cladding can be fixed horizontally or vertically with multi space cladding System.",
     "technicalDetails": {
@@ -88,7 +88,7 @@
     ]
   },
   {
-    "title": "Linear 84R / 184 R",
+    "title": "Linear 84R - 184 R",
     "cover": "assets/placeholder.jpg",
     "features": "Linear 84R / 184R Ceiling is known for its attractive and fluid lines. The spaces between the panels may be left open for acoustical or air movement requirements, or closed with separate Flush Cap to give concealed look. Panels can be easily removed & replaced by hand allowing easy and full access to services.",
     "technicalDetails": {
@@ -110,7 +110,7 @@
     ]
   },
   {
-    "title": "Linear 84C / 184C",
+    "title": "Linear 84C - 184C",
     "cover": "assets/placeholder.jpg",
     "features": "Linear 84C / 184C has been used extensively on exterior and interior applications and gives designers options for visual design continuity. Panels are clipped into the concealed suspension system to form a closed joint linear ceiling. It will give a rhythm to any Project, where colors and length come together. Various acoustical criteria can be met with the inclusion of acoustical inlays.",
     "technicalDetails": {
@@ -212,6 +212,26 @@
       "thumbnailURL",
       "thumbnailURL",
       "thumbnailURL"
+    ],
+    "OriginalURL": [
+      "thumbnailURL",
+      "thumbnailURL",
+      "thumbnailURL"
+    ]
+  },
+  {
+    "title": "Wooden Texture",
+    "cover": "assets/Products/Wooden Texture/wooden_texture.JPG",
+    "features": "At present, natural Wood finish concept is increasing widely in ceilings, cladding & acoustics.The desired wooden look can be obtained while enjoying the familiar advantages of metal false ceilings. The creative possibilities are almost unlimited, with aesthetic and reliable functionality.",
+    "thumbnailURL": [
+      "assets/Products/Wooden Texture/small 1.jpg",
+      "assets/Products/Wooden Texture/small 2.jpg",
+      "assets/Products/Wooden Texture/small 3.jpg",
+      "assets/Products/Wooden Texture/small 4.jpg",
+      "assets/Products/Wooden Texture/small 5.jpg",
+      "assets/Products/Wooden Texture/small 6.jpg",
+      "assets/Products/Wooden Texture/small 7.jpg",
+      "assets/Products/Wooden Texture/small 8.jpg"
     ],
     "OriginalURL": [
       "thumbnailURL",

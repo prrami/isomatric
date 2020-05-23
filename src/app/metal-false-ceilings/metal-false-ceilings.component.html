@@ -1,4 +1,7 @@
-<mat-card class="product-card" *ngFor="let subproduct of SubProducts">
+<mat-card data-aos="zoom-in"
+data-aos-easing="linear"
+data-aos-duration="500"
+data-aos-anchor-placement="top-bottom" class="product-card" *ngFor="let subproduct of SubProducts">
     <mat-card-header>
       <mat-card-title>{{subproduct.title}}</mat-card-title>
     </mat-card-header>
