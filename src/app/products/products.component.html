@@ -1,13 +1,10 @@
-<mat-card data-aos="zoom-in"
-data-aos-easing="linear"
-data-aos-duration="500"
-data-aos-anchor-placement="top-bottom" class="product-card" *ngFor="let product of products">
+<mat-card class="product-card" *ngFor="let product of products">
     <mat-card-header>
       <mat-card-title>{{product.title}}</mat-card-title>
     </mat-card-header>
     <img mat-card-image src="{{product.thumbnailURL}}" alt="Photo of a Shiba Inu">
     <mat-card-content>
-      <p style="color:#767676;text-align:justify;font-family: Roboto , sans-serif;line-height: 1.5 ;font-style: normal;letter-spacing: 1.0px;font-size: 16px;">
+      <p class="CardProductDetail">
         {{product.detail}}
       </p>
     </mat-card-content>
@@ -17,6 +14,7 @@ data-aos-anchor-placement="top-bottom" class="product-card" *ngFor="let product 
         </div>
     </mat-card-actions>
 </mat-card>
+
 
 
   

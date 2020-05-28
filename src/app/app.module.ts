@@ -28,6 +28,7 @@ import {MatTabsModule} from '@angular/material/tabs';
 import { ProjectPhotosComponent } from './project-photos/project-photos.component';
 import { HttpClientModule } from '@angular/common/http';
 import { ProductDetailComponent } from './product-detail/product-detail.component';
+import { FooterComponent } from './footer/footer.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -39,6 +40,7 @@ import { ProductDetailComponent } from './product-detail/product-detail.componen
     WoodenTextureComponent,
     ProjectPhotosComponent,
     ProductDetailComponent,
+    FooterComponent,
   ],
   imports: [
     BrowserModule,
