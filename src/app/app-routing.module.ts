@@ -7,6 +7,9 @@ import { MetalExteriorLouversComponent } from './metal-exterior-louvers/metal-ex
 import { WoodenTextureComponent } from './wooden-texture/wooden-texture.component';
 import { ProjectPhotosComponent } from './project-photos/project-photos.component';
 import { ProductDetailComponent } from './product-detail/product-detail.component';
+import { DownloadComponent } from './download/download.component';
+import { ContactUsComponent } from './contact-us/contact-us.component';
+import { ContactFormComponent } from './contact-form/contact-form.component';
 const routes: Routes = [
   {path: 'Products', component: ProductsComponent},
   {path: 'home', component: HomeComponent},
@@ -15,6 +18,9 @@ const routes: Routes = [
   {path: 'Wooden Texture', component: WoodenTextureComponent},
   {path: 'ProjectPhotos', component: ProjectPhotosComponent},
   {path: 'ProductDetail/:title', component: ProductDetailComponent},
+  {path: 'Download', component: DownloadComponent},
+  {path: 'ContactForm', component: ContactFormComponent},
+  {path: 'ContactUs', component: ContactUsComponent},
 ];
 
 @NgModule({

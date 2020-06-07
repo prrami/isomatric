@@ -29,6 +29,9 @@ import { ProjectPhotosComponent } from './project-photos/project-photos.componen
 import { HttpClientModule } from '@angular/common/http';
 import { ProductDetailComponent } from './product-detail/product-detail.component';
 import { FooterComponent } from './footer/footer.component';
+import {MatTooltipModule} from '@angular/material/tooltip';
+import { DownloadComponent } from './download/download.component';
+import { ContactUsComponent } from './contact-us/contact-us.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -41,6 +44,8 @@ import { FooterComponent } from './footer/footer.component';
     ProjectPhotosComponent,
     ProductDetailComponent,
     FooterComponent,
+    DownloadComponent,
+    ContactUsComponent,
   ],
   imports: [
     BrowserModule,
@@ -63,7 +68,8 @@ import { FooterComponent } from './footer/footer.component';
     MatBadgeModule,
     MatTreeModule,
     MatTabsModule,
-    HttpClientModule
+    HttpClientModule,
+    MatTooltipModule
   ],
   providers: [],
   bootstrap: [AppComponent]

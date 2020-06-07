@@ -3,9 +3,9 @@
       <mat-card-title>{{subproduct.title}}</mat-card-title>
     </mat-card-header>
     <img mat-card-image src="{{subproduct.thumbnailURL}}" alt="Photo of a Shiba Inu">
-    <mat-card-content style="min-height: 150px;">
-      <p class="CardProductDetail">
-        {{subproduct.detail}}
+    <mat-card-content>
+      <p class="CardProductDetail" matTooltip="{{subproduct.detail}}">
+        {{((subproduct.detail).length>100)? (subproduct.detail | slice:0:100)+'...':(subproduct.detail)}}
       </p>
     </mat-card-content>
     <mat-card-actions>
