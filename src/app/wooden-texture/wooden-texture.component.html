@@ -3,7 +3,7 @@
     <mat-divider></mat-divider>
     <br>
     <section>
-        <div class="col-md-12">
+        <div class="col-md-12"> 
             <div class="col-md-7">
                 <img class="fitTodiv" style="box-shadow: 1px 1px 3px gray;" src="{{product.cover}}">
             </div>
@@ -26,11 +26,17 @@
                 </mat-card>
             </div>
         </div>
-        <div *ngIf="product.thumbnailURL">
-            
+        <div class="Gallery">
+            <mat-divider></mat-divider>
+            <div class="gallerize-example"> 
+                <p class="container" gallerize>
+                    <img *ngFor="let img of imageData" [src]="img.srcUrl">
+                </p>
+            </div>
         </div>
     </section>
 </div>
+
 
 
 
