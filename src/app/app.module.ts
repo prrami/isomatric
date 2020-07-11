@@ -32,9 +32,6 @@ import { FooterComponent } from './footer/footer.component';
 import {MatTooltipModule} from '@angular/material/tooltip';
 import { DownloadComponent } from './download/download.component';
 import { ContactUsComponent } from './contact-us/contact-us.component';
-
-import { GalleryModule } from 'ng-gallery';
-import { LightboxModule } from 'ng-gallery/lightbox';
 @NgModule({
   declarations: [
     AppComponent,
@@ -72,10 +69,7 @@ import { LightboxModule } from 'ng-gallery/lightbox';
     MatTreeModule,
     MatTabsModule,
     HttpClientModule,
-    MatTooltipModule,
-    BrowserAnimationsModule,
-    GalleryModule,
-    LightboxModule
+    MatTooltipModule
   ],
   providers: [],
   bootstrap: [AppComponent]
