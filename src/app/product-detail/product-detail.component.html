@@ -3,7 +3,7 @@
     <mat-divider></mat-divider>
     <br>
     <section>
-        <div class="col-md-12">
+        <div class="col-md-12"> 
             <div class="col-md-7">
                 <img class="fitTodiv" style="box-shadow: 1px 1px 3px gray;" src="{{product.cover}}">
             </div>
@@ -13,7 +13,7 @@
                         <mat-tab label="Features">
                             <p style="padding-top: 25px;" class="discription20">{{product.features}}</p>
                         </mat-tab>
-                        <mat-tab label="Technical Details">
+                        <mat-tab *ngIf="product.technicalDetails" label="Technical Details">
                             <p style="padding-top: 25px;" class="discription20">
                                 <span *ngIf="product.technicalDetails.Panels"><b>Panels: </b>{{product.technicalDetails.Panels}}<br><br></span>
                                 <span *ngIf="product.technicalDetails.Material"><b>Material: </b>{{product.technicalDetails.Material}}<br><br></span>
@@ -26,8 +26,17 @@
                 </mat-card>
             </div>
         </div>
+        <div class="Gallery">
+            <mat-divider></mat-divider>
+            <div class="gallerize-example"> 
+                <p class="container" gallerize>
+                    <img class="Magnify" *ngFor="let img of imageData" [src]="img.srcUrl">
+                </p>
+            </div>
+        </div>
     </section>
 </div>
+
 
 
 
