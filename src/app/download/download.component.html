@@ -1,6 +1,6 @@
-<iframe name="fileIframe" class="col-md-9 fileIframe"></iframe>
-<mat-list>
+<mat-list style="float:left;">
     <mat-list-item *ngFor="let file of FilesToDownload">
         <a href="{{file.URL}}" target="fileIframe"><span>{{file.title}} </span><mat-icon class="material-icon" aria-hidden="false">get_app</mat-icon></a>
     </mat-list-item>
 </mat-list>
+<iframe name="fileIframe" class="col-md-9 fileIframe"></iframe>
