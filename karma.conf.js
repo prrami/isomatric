@@ -27,6 +27,9 @@ module.exports = function (config) {
     autoWatch: true,
     browsers: ['Chrome'],
     singleRun: false,
-    restartOnFileChange: true
+    restartOnFileChange: true,
+    map: {
+      'ngx-gallery': 'node_modules/ngx-gallery/bundles/ngx-gallery.umd.js',
+    }
   });
 };

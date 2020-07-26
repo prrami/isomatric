@@ -5,7 +5,8 @@
     <section>
         <div class="col-md-12">
             <div class="col-md-7">
-                <img class="fitTodiv" style="box-shadow: 1px 1px 3px gray;" src="{{product.cover}}">
+                <ngx-gallery [options]="galleryOptions" [images]="galleryImages"></ngx-gallery>
+                <!-- <img class="fitTodiv" style="box-shadow: 1px 1px 3px gray;" src="{{product.cover}}"> -->
             </div>
             <div class="col-md-5">
                 <mat-card> 

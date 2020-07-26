@@ -1,5 +1,6 @@
 import { Component, ViewEncapsulation, OnInit } from '@angular/core';
 import { HttpClient } from "@angular/common/http";
+import { NgxGalleryOptions, NgxGalleryImage, NgxGalleryAnimation } from 'ngx-gallery';
 @Component({
   selector: 'app-wooden-texture',
   templateUrl: './wooden-texture.component.html',
@@ -10,6 +11,8 @@ export class WoodenTextureComponent implements OnInit {
   products: any = [];
   product: any;
   title:string;
+  galleryOptions: NgxGalleryOptions[];
+  galleryImages: NgxGalleryImage[];
   //subtitle:string;
   constructor(
     private httpClient: HttpClient) {
@@ -17,6 +20,12 @@ export class WoodenTextureComponent implements OnInit {
     
   ngOnInit() {
     this.getProduct();
+    this.galleryOptions = [
+      { "width":"100%", "height": "80vh", "imageAnimation": "zoom" , "imageArrowsAutoHide": true, "thumbnailsArrowsAutoHide": true,"imageAutoPlay": true, "imageAutoPlayPauseOnHover": true, "previewAutoPlay": true, "previewAutoPlayPauseOnHover": true },
+      { "breakpoint": 500, "width": "100%", "height": "50vh", "thumbnailsColumns": 3 },
+      { "breakpoint": 300, "width": "100%", "height": "50vh", "thumbnailsColumns": 2 },
+      ];
+    this.galleryImages = [];
   }
   
   getProduct(): void {
@@ -27,10 +36,8 @@ export class WoodenTextureComponent implements OnInit {
     // const id = +this.route.snapshot.paramMap.get('id');
     this.httpClient.get("assets/ProductDetail.json").subscribe(data =>{
       this.products = data;
-      console.log(this.products);
       this.product = this.products.filter(x=>x.title === "Wooden Texture")[0];
-      //this.product = this.products.filter(x=>x.SubProducts === this.title)[0];
-      console.log(this.product);
+      this.galleryImages = this.product.Gallery;
     })
     }
 }

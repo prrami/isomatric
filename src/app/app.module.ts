@@ -32,6 +32,9 @@ import { FooterComponent } from './footer/footer.component';
 import {MatTooltipModule} from '@angular/material/tooltip';
 import { DownloadComponent } from './download/download.component';
 import { ContactUsComponent } from './contact-us/contact-us.component';
+import { GalleryModule } from  '@ngx-gallery/core';
+import { LightboxModule } from  '@ngx-gallery/lightbox';
+import { NgxGalleryModule } from 'ngx-gallery';
 @NgModule({
   declarations: [
     AppComponent,
@@ -69,9 +72,13 @@ import { ContactUsComponent } from './contact-us/contact-us.component';
     MatTreeModule,
     MatTabsModule,
     HttpClientModule,
-    MatTooltipModule
+    MatTooltipModule,
+    GalleryModule,
+    LightboxModule,
+    NgxGalleryModule
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
+  
 })
 export class AppModule { }
